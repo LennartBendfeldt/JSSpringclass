@@ -1,0 +1,22 @@
+Day 1
+4/2/2019
+
+var
+const - will not change
+let - will change
+
+string = '15'
+int = 15
+float = 15.382
+
+boolean = true/false
+
+array = ordered list of data [1, 2, 4] (one type of data)
+
+null = no value
+
+undefined = doesn't have a value assigned
+
+objects = {
+	name: Jimmy
+}
