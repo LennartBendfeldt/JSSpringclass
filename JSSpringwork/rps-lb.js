@@ -10,6 +10,7 @@ while((pOneScore || pTwoScore) < 3){
 
     if(pOneWeaponOfChoice == pTwoWeaponOfChoice){
 
+        console.log("Player One Chose: " + pOneWeaponOfChoice + "Player Two Chose: " + pTwoWeaponOfChoice);
         console.log("It's a tie!");
         console.log("Player One:" + pOneScore + "Player Two: " + pTwoScore);
         continue;
@@ -17,12 +18,14 @@ while((pOneScore || pTwoScore) < 3){
 
     else if((pOneWeaponOfChoice == 'rock' && pTwoWeaponOfChoice == 'scissors') || (pOneWeaponOfChoice == 'scissors' && pTwoWeaponOfChoice == 'paper') || (pOneWeaponOfChoice == 'paper' && pTwoWeaponOfChoice == 'rock')){
 
+        console.log("Player One Chose: " + pOneWeaponOfChoice + "Player Two Chose: " + pTwoWeaponOfChoice);
         console.log("Player 1 wins!");
         pOneScore = pOneScore + 1;
         console.log("Player One:" + pOneScore + "Player Two: " + pTwoScore);
         continue;
     } else {
 
+        console.log("Player One Chose: " + pOneWeaponOfChoice + "Player Two Chose: " + pTwoWeaponOfChoice);
         console.log("Player 2 Wins!");
         pTwoScore = pTwoScore + 1;
         console.log("Player One:" + pOneScore + "Player Two: " + pTwoScore);
