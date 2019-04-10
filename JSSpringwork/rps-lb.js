@@ -3,7 +3,7 @@ var weapons = ['rock' , 'paper', 'scissors'];
 var pOneScore = 0;
 var pTwoScore = 0;
 
-while((pOneScore || pTwoScore) < 3){
+while((pOneScore && pTwoScore) < 3){
 
     var pOneWeaponOfChoice = weapons[parseInt(Math.random()*weapons.length) %3];
     var pTwoWeaponOfChoice = weapons[parseInt(Math.random()*weapons.length) %3];
