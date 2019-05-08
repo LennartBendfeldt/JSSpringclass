@@ -1,12 +1,19 @@
-var bottles = 99;
+// var bottles = 99;
 
-for(bottles; bottles >= 0; bottles --){
+// for(bottles; bottles >= 0; bottles --){
 
-    if(bottles === 0){
+//     if(bottles === 0){
 
-        console.log("Get some more beer!");
-    } else {
+//         console.log("Get some more beer!");
+//     } else {
 
-        console.log((bottles +1) + " bottels of beer on the wall. Take one down, pass it around. " + bottles + " bottles of beer on the wall!");    
-    }
-}
+//         console.log((bottles +1) + " bottels of beer on the wall. Take one down, pass it around. " + bottles + " bottles of beer on the wall!");    
+//     }
+// }
+
+var nums = [];
+
+nums[0] = 4;
+nums[1] = 42;
+
+console.log(nums);
