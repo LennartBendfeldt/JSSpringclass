@@ -13,14 +13,14 @@ function getHand(){
 
 var player1 = {
 
-    name: 'Player1',
+    name: 'John',
     handp1: getHand(),
     score: 0,
 }
 
 var player2 = {
 
-    name: 'Player2',
+    name: 'Larry',
     handp2: getHand(),
     score: 0,
 }
@@ -35,12 +35,12 @@ function playRound(player1, player2){
         console.log('Its a tie');
 
     } else if(winConditions[player1hand] === player2hand){
-        console.log('Player 1 wins');
+        gameinfo.lastElementChild.firstElementChild.innerHTML = "Player 1 wins!";
         player1.score = player1.score + 1;
         console.log(player1.score, player2.score);
 
     } else {
-        console.log('Player 2 wins!');
+        gameinfo.lastElementChild.firstElementChild.innerHTML = "Player 2 wins!";
         player2.score = player2.score + 1;
         console.log(player1.score, player2.score);
     }
@@ -61,11 +61,21 @@ function playGame(player1, player2, playUntil){
 
 var playbutton1 = document.getElementById('playbutton');
 var playtext1 = document.getElementById('Play');
-var
+var gameinfo = document.getElementById('gameinfo');
 
-playbutton1,onclick = () => {
+playbutton1.onclick = function rungame(){
+
+player1.score = 0;
+player2.score = 0;
+
+playbutton1.innerHTML = "Play again?";
+playtext1.remove();
 
 playGame(player1, player2, playUntil);
-playbutton1.remove();
-playtext1.remove();
+gameinfo.firstElementChild.firstElementChild.innerHTML = "Player 1: " + player1.name;
+gameinfo.firstElementChild.firstElementChild.nextElementSibling.innerHTML = "Score: " + player1.score;
+gameinfo.firstElementChild.nextElementSibling.firstElementChild.innerHTML = "Player 2: " + player2.name;
+gameinfo.firstElementChild.nextElementSibling.firstElementChild.nextElementSibling.innerHTML = "Score: " + player2.score;
 }
+
+
