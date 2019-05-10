@@ -1,20 +1,59 @@
+<!DOCTYPE html>
+
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Rock, Paper, Scissors</title>
+    <title>Rock, Paper, Scissors!</title>
   </head>
-  <body>
-    <h1>Welcome to Rock, Paper, Scissors!</h1>
+  <body id = "rpsbody">
+    <h1 id="RPSTITLE">Rock, Paper, Scissors!</h1>
+    <div id = "gameinfo">
+    <div id = "gameinfop1">
 
-    <p>
-            <label>Name: </label>
-            <input type = "text"
-                   id = "myText"
-                   value = "" />
-    </p>
+      <p id = "player1name"></p>
+      <p id = "player1score"></p>
 
-    <button type="button" onclick="modifyColor()" id = "butt1">Let's play</button>
+    </div>
+    <div id = "gameinfop2">
 
+      <p id = "player2name"></p>
+      <p id = "player2score"></p>
+
+    </div>
+    <div id = "gameinfogeneral">
+
+      <p id = "winner"></p>
+
+    </div>
+    </div>
+    
+    <h3 id="Play">Would you like to play?</h3>
+    <button id="playbutton">Play</button>
+    
     <script type="text/javascript" src="javascript/main.js"></script>
     </body>
   </html>
+
+  <!-- <!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rock, Paper, Scissors!</title>
+  </head>
+  <body>
+    <h1 id="RPSTITLE">Rock, Paper, Scissors!</h1>
+    <h3 id="Roundindicator">Round 1</h3>
+
+    <p id="Player1name">Player 1</p>
+    <p id="Player1score"></p>
+    <p id="Player2name">Player 2</p>
+    <p id="Player2score"></p>
+    
+    <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissors">Scissors</button>
+    
+    <script type="text/javascript" src="javascript/main.js"></script>
+    </body>
+  </html> -->
