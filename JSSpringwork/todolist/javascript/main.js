@@ -1,20 +1,47 @@
+
+
 var del0101 = document.getElementById('del0101');
+var add0101 = document.getElementById('add0101');
+var demoline = document.getElementById('demo');
+var testline = document.getElementById('test');
 
-del0101.onclick = function deleteAdd(){
+var list = { item1: "" };
 
-    // if(del0101.parentElement.parentElement.parentElement.childElementCount === 1){
-    //     del0101.parentElement.appendChild
-    // }
-    del0101.parentElement.parentElement.remove();
+del0101.onclick = function deleteAdd() {
+
+    if (del0101.parentElement.parentElement.childElementCount === 1) {
+
+    } else {
+        del0101.parentElement.parentElement.remove();
+    }
 };
 
-var add0101 = document.getElementById('add0101');
+add0101.onclick = function addd() {
+
+    if(add0101.innerHTML === "edit"){
+
+        testline.remove();
+    }
+
+    var x = document.getElementById("merp");
+    var text = "";
+    var i;
+    for (i = 0; i < x.length; i++) {
+        text += x.elements[i].value;
+    }
 
 
-add0101.onclick = function addd(){
-    var a = document.getElementById('myText').value;
-    
+    list.item1 = text;
+    setdemo();
+
+    if(add0101.innerHTML === "edit"){
+
+        demoline.innerHTML = "";
+    }
 }
-document.getElementById('test').innerHTML = a;
 
-
+function setdemo() {
+    document.getElementById('merp').remove();
+    add0101.innerHTML = "edit";
+    testline.innerHTML = list.item1;
+}
