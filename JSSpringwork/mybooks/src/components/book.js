@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import '../css/book.css';
-import PropTypes from 'prop-types';
 
 class Book extends Component {
   constructor() {
@@ -30,8 +29,8 @@ Book.defaultProps = {
     genre: "fantasy"
 };
 
-Book.propTypes = {
-  title: PropTypes.string
-};
+// Book.propTypes = {
+//   title: PropTypes.string
+// };
 
 export default Book;

@@ -22,4 +22,11 @@ class Note extends Component {
     }
   }
   
-  export default Note;
+  Note.defaultProps = {
+    title: "A cool title",
+    body: "A cool body",
+  };
+  
+
+  
+export default Note;
